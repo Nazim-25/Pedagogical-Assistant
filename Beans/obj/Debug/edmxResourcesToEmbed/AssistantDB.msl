@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AssistantDBModelStoreContainer" CdmEntityContainer="AssistantDB">
+    <EntitySetMapping Name="Enseignants">
+      <EntityTypeMapping TypeName="AssistantDBModel.Enseignant">
+        <MappingFragment StoreEntitySet="Enseignant">
+          <ScalarProperty Name="id_enseignant" ColumnName="id_enseignant" />
+          <ScalarProperty Name="nom" ColumnName="nom" />
+          <ScalarProperty Name="prenom" ColumnName="prenom" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="id_module" ColumnName="id_module" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Etudiants">
+      <EntityTypeMapping TypeName="AssistantDBModel.Etudiant">
+        <MappingFragment StoreEntitySet="Etudiant">
+          <ScalarProperty Name="id_etudiant" ColumnName="id_etudiant" />
+          <ScalarProperty Name="nom" ColumnName="nom" />
+          <ScalarProperty Name="prenom" ColumnName="prenom" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="groupe" ColumnName="groupe" />
+          <ScalarProperty Name="id_binome" ColumnName="id_binome" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="module2">
+      <EntityTypeMapping TypeName="AssistantDBModel.module2">
+        <MappingFragment StoreEntitySet="module2">
+          <ScalarProperty Name="id_module" ColumnName="id_module" />
+          <ScalarProperty Name="nom_module" ColumnName="nom_module" />
+          <ScalarProperty Name="abrv_module" ColumnName="abrv_module" />
+          <ScalarProperty Name="coefficient" ColumnName="coefficient" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ModuleEtudies">
+      <EntityTypeMapping TypeName="AssistantDBModel.ModuleEtudie">
+        <MappingFragment StoreEntitySet="ModuleEtudie">
+          <ScalarProperty Name="id_moduleEtudie" ColumnName="id_moduleEtudie" />
+          <ScalarProperty Name="id_etudiant" ColumnName="id_etudiant" />
+          <ScalarProperty Name="id_module" ColumnName="id_module" />
+          <ScalarProperty Name="nbr_absence" ColumnName="nbr_absence" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RarFiles">
+      <EntityTypeMapping TypeName="AssistantDBModel.RarFile">
+        <MappingFragment StoreEntitySet="RarFiles">
+          <ScalarProperty Name="id_file" ColumnName="id_file" />
+          <ScalarProperty Name="id_etudiant" ColumnName="id_etudiant" />
+          <ScalarProperty Name="File" ColumnName="File" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="Extension" ColumnName="Extension" />
+          <ScalarProperty Name="id_seance" ColumnName="id_seance" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Seance2">
+      <EntityTypeMapping TypeName="AssistantDBModel.Seance2">
+        <MappingFragment StoreEntitySet="Seance2">
+          <ScalarProperty Name="id_seance" ColumnName="id_seance" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="id_enseignant" ColumnName="id_enseignant" />
+          <ScalarProperty Name="id_module" ColumnName="id_module" />
+          <ScalarProperty Name="Data" ColumnName="Data" />
+          <ScalarProperty Name="Extension" ColumnName="Extension" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SeanceAssistes">
+      <EntityTypeMapping TypeName="AssistantDBModel.SeanceAssiste">
+        <MappingFragment StoreEntitySet="SeanceAssiste">
+          <ScalarProperty Name="id_seanceAssiste" ColumnName="id_seanceAssiste" />
+          <ScalarProperty Name="id_seance" ColumnName="id_seance" />
+          <ScalarProperty Name="id_etudiant" ColumnName="id_etudiant" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="AssistantDBModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="AssistantDBModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="AssistantDBModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="AssistantDBModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="AssistantDBModel.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="AssistantDBModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="AssistantDBModel.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="AssistantDBModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="AssistantDBModel.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="AssistantDBModel.Store.sp_upgraddiagrams" />
+  </EntityContainerMapping>
+</Mapping>

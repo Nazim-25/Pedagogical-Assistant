@@ -1,0 +1,17 @@
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\Enseignant\bin\Debug\Enseignant.exe.config
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\Enseignant\bin\Debug\Enseignant.exe
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\Enseignant\bin\Debug\Enseignant.pdb
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\Enseignant\bin\Debug\Interfaces.dll
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\Enseignant\bin\Debug\Interfaces.pdb
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\Enseignant\obj\Debug\Enseignant.csprojResolveAssemblyReference.cache
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\Enseignant\obj\Debug\Enseignant.EnseignantLogin.resources
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\Enseignant\obj\Debug\Enseignant.Properties.Resources.resources
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\Enseignant\obj\Debug\Enseignant.csproj.GenerateResource.Cache
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\Enseignant\obj\Debug\Enseignant.exe
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\Enseignant\obj\Debug\Enseignant.pdb
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\Enseignant\obj\Debug\Enseignant.EnseignantMain.resources
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\Enseignant\bin\Debug\Beans.dll
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\Enseignant\bin\Debug\EntityFramework.dll
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\Enseignant\bin\Debug\Beans.pdb
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\Enseignant\bin\Debug\EntityFramework.xml
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\Enseignant\bin\Debug\fr\EntityFramework.resources.dll

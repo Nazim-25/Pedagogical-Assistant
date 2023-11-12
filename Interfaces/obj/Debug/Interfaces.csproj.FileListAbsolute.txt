@@ -1,0 +1,10 @@
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\Interfaces\bin\Debug\Interfaces.dll
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\Interfaces\bin\Debug\Interfaces.pdb
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\Interfaces\obj\Debug\Interfaces.csprojResolveAssemblyReference.cache
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\Interfaces\obj\Debug\Interfaces.dll
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\Interfaces\obj\Debug\Interfaces.pdb
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\Interfaces\bin\Debug\Beans.dll
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\Interfaces\bin\Debug\EntityFramework.dll
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\Interfaces\bin\Debug\Beans.pdb
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\Interfaces\bin\Debug\EntityFramework.xml
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\Interfaces\bin\Debug\fr\EntityFramework.resources.dll

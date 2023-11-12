@@ -1,0 +1,9 @@
+C:\Users\Nazim\OneDrive\Documents\Visual Studio 2012\Projects\MiniProjet\Beans\bin\Debug\Beans.dll.config
+C:\Users\Nazim\OneDrive\Documents\Visual Studio 2012\Projects\MiniProjet\Beans\bin\Debug\Beans.dll
+C:\Users\Nazim\OneDrive\Documents\Visual Studio 2012\Projects\MiniProjet\Beans\bin\Debug\Beans.pdb
+C:\Users\Nazim\OneDrive\Documents\Visual Studio 2012\Projects\MiniProjet\Beans\bin\Debug\EntityFramework.dll
+C:\Users\Nazim\OneDrive\Documents\Visual Studio 2012\Projects\MiniProjet\Beans\bin\Debug\EntityFramework.xml
+C:\Users\Nazim\OneDrive\Documents\Visual Studio 2012\Projects\MiniProjet\Beans\bin\Debug\fr\EntityFramework.resources.dll
+C:\Users\Nazim\OneDrive\Documents\Visual Studio 2012\Projects\MiniProjet\Beans\obj\Debug\Beans.csprojResolveAssemblyReference.cache
+C:\Users\Nazim\OneDrive\Documents\Visual Studio 2012\Projects\MiniProjet\Beans\obj\Debug\Beans.dll
+C:\Users\Nazim\OneDrive\Documents\Visual Studio 2012\Projects\MiniProjet\Beans\obj\Debug\Beans.pdb

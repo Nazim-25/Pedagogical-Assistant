@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AssistantDBM.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="AssistantDBMStoreContainer">
+    <EntitySet Name="Enseignant" EntityType="AssistantDBM.Store.Enseignant" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Etudiant" EntityType="AssistantDBM.Store.Etudiant" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="module2" EntityType="AssistantDBM.Store.module2" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ModuleEtudie" EntityType="AssistantDBM.Store.ModuleEtudie" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="RarFiles" EntityType="AssistantDBM.Store.RarFiles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Seance2" EntityType="AssistantDBM.Store.Seance2" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SeanceAssiste" EntityType="AssistantDBM.Store.SeanceAssiste" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sysdiagrams" EntityType="AssistantDBM.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_Enseignant_module2" Association="AssistantDBM.Store.FK_Enseignant_module2">
+      <End Role="module2" EntitySet="module2" />
+      <End Role="Enseignant" EntitySet="Enseignant" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Etudiant_Etudiant" Association="AssistantDBM.Store.FK_Etudiant_Etudiant">
+      <End Role="Etudiant" EntitySet="Etudiant" />
+      <End Role="Etudiant1" EntitySet="Etudiant" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ModuleEtudie_Etudiant" Association="AssistantDBM.Store.FK_ModuleEtudie_Etudiant">
+      <End Role="Etudiant" EntitySet="Etudiant" />
+      <End Role="ModuleEtudie" EntitySet="ModuleEtudie" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ModuleEtudie_module2" Association="AssistantDBM.Store.FK_ModuleEtudie_module2">
+      <End Role="module2" EntitySet="module2" />
+      <End Role="ModuleEtudie" EntitySet="ModuleEtudie" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RarFiles_Etudiant" Association="AssistantDBM.Store.FK_RarFiles_Etudiant">
+      <End Role="Etudiant" EntitySet="Etudiant" />
+      <End Role="RarFiles" EntitySet="RarFiles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RarFiles_Seance2" Association="AssistantDBM.Store.FK_RarFiles_Seance2">
+      <End Role="Seance2" EntitySet="Seance2" />
+      <End Role="RarFiles" EntitySet="RarFiles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Seance2_Enseignant" Association="AssistantDBM.Store.FK_Seance2_Enseignant">
+      <End Role="Enseignant" EntitySet="Enseignant" />
+      <End Role="Seance2" EntitySet="Seance2" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Seance2_module2" Association="AssistantDBM.Store.FK_Seance2_module2">
+      <End Role="module2" EntitySet="module2" />
+      <End Role="Seance2" EntitySet="Seance2" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SeanceAssiste_Etudiant" Association="AssistantDBM.Store.FK_SeanceAssiste_Etudiant">
+      <End Role="Etudiant" EntitySet="Etudiant" />
+      <End Role="SeanceAssiste" EntitySet="SeanceAssiste" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SeanceAssiste_Seance2" Association="AssistantDBM.Store.FK_SeanceAssiste_Seance2">
+      <End Role="Seance2" EntitySet="Seance2" />
+      <End Role="SeanceAssiste" EntitySet="SeanceAssiste" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Enseignant">
+    <Key>
+      <PropertyRef Name="id_enseignant" />
+    </Key>
+    <Property Name="id_enseignant" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nom" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="prenom" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="email" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="password" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="id_module" Type="int" />
+  </EntityType>
+  <EntityType Name="Etudiant">
+    <Key>
+      <PropertyRef Name="id_etudiant" />
+    </Key>
+    <Property Name="id_etudiant" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nom" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="prenom" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="email" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="password" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="groupe" Type="int" Nullable="false" />
+    <Property Name="id_binome" Type="int" />
+  </EntityType>
+  <EntityType Name="module2">
+    <Key>
+      <PropertyRef Name="id_module" />
+    </Key>
+    <Property Name="id_module" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nom_module" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="abrv_module" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="coefficient" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ModuleEtudie">
+    <Key>
+      <PropertyRef Name="id_moduleEtudie" />
+    </Key>
+    <Property Name="id_moduleEtudie" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="id_etudiant" Type="int" />
+    <Property Name="id_module" Type="int" />
+    <Property Name="nbr_absence" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RarFiles">
+    <Key>
+      <PropertyRef Name="id_file" />
+    </Key>
+    <Property Name="id_file" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="id_etudiant" Type="int" Nullable="false" />
+    <Property Name="File" Type="varbinary(max)" Nullable="false" />
+    <Property Name="FileName" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Extension" Type="char" Nullable="false" MaxLength="4" />
+    <Property Name="id_seance" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Seance2">
+    <Key>
+      <PropertyRef Name="id_seance" />
+    </Key>
+    <Property Name="id_seance" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="date" Type="smalldatetime" Nullable="false" />
+    <Property Name="id_enseignant" Type="int" />
+    <Property Name="id_module" Type="int" />
+    <Property Name="Data" Type="varbinary(max)" />
+    <Property Name="Extension" Type="char" MaxLength="4" />
+    <Property Name="FileName" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="SeanceAssiste">
+    <Key>
+      <PropertyRef Name="id_seanceAssiste" />
+    </Key>
+    <Property Name="id_seanceAssiste" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="id_seance" Type="int" />
+    <Property Name="id_etudiant" Type="int" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <Association Name="FK_Enseignant_module2">
+    <End Role="module2" Type="AssistantDBM.Store.module2" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Enseignant" Type="AssistantDBM.Store.Enseignant" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="module2">
+        <PropertyRef Name="id_module" />
+      </Principal>
+      <Dependent Role="Enseignant">
+        <PropertyRef Name="id_module" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Etudiant_Etudiant">
+    <End Role="Etudiant" Type="AssistantDBM.Store.Etudiant" Multiplicity="0..1" />
+    <End Role="Etudiant1" Type="AssistantDBM.Store.Etudiant" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Etudiant">
+        <PropertyRef Name="id_etudiant" />
+      </Principal>
+      <Dependent Role="Etudiant1">
+        <PropertyRef Name="id_binome" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ModuleEtudie_Etudiant">
+    <End Role="Etudiant" Type="AssistantDBM.Store.Etudiant" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ModuleEtudie" Type="AssistantDBM.Store.ModuleEtudie" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Etudiant">
+        <PropertyRef Name="id_etudiant" />
+      </Principal>
+      <Dependent Role="ModuleEtudie">
+        <PropertyRef Name="id_etudiant" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ModuleEtudie_module2">
+    <End Role="module2" Type="AssistantDBM.Store.module2" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ModuleEtudie" Type="AssistantDBM.Store.ModuleEtudie" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="module2">
+        <PropertyRef Name="id_module" />
+      </Principal>
+      <Dependent Role="ModuleEtudie">
+        <PropertyRef Name="id_module" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RarFiles_Etudiant">
+    <End Role="Etudiant" Type="AssistantDBM.Store.Etudiant" Multiplicity="1" />
+    <End Role="RarFiles" Type="AssistantDBM.Store.RarFiles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Etudiant">
+        <PropertyRef Name="id_etudiant" />
+      </Principal>
+      <Dependent Role="RarFiles">
+        <PropertyRef Name="id_etudiant" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RarFiles_Seance2">
+    <End Role="Seance2" Type="AssistantDBM.Store.Seance2" Multiplicity="1" />
+    <End Role="RarFiles" Type="AssistantDBM.Store.RarFiles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Seance2">
+        <PropertyRef Name="id_seance" />
+      </Principal>
+      <Dependent Role="RarFiles">
+        <PropertyRef Name="id_seance" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Seance2_Enseignant">
+    <End Role="Enseignant" Type="AssistantDBM.Store.Enseignant" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Seance2" Type="AssistantDBM.Store.Seance2" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Enseignant">
+        <PropertyRef Name="id_enseignant" />
+      </Principal>
+      <Dependent Role="Seance2">
+        <PropertyRef Name="id_enseignant" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Seance2_module2">
+    <End Role="module2" Type="AssistantDBM.Store.module2" Multiplicity="0..1" />
+    <End Role="Seance2" Type="AssistantDBM.Store.Seance2" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="module2">
+        <PropertyRef Name="id_module" />
+      </Principal>
+      <Dependent Role="Seance2">
+        <PropertyRef Name="id_module" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SeanceAssiste_Etudiant">
+    <End Role="Etudiant" Type="AssistantDBM.Store.Etudiant" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="SeanceAssiste" Type="AssistantDBM.Store.SeanceAssiste" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Etudiant">
+        <PropertyRef Name="id_etudiant" />
+      </Principal>
+      <Dependent Role="SeanceAssiste">
+        <PropertyRef Name="id_etudiant" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SeanceAssiste_Seance2">
+    <End Role="Seance2" Type="AssistantDBM.Store.Seance2" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="SeanceAssiste" Type="AssistantDBM.Store.SeanceAssiste" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Seance2">
+        <PropertyRef Name="id_seance" />
+      </Principal>
+      <Dependent Role="SeanceAssiste">
+        <PropertyRef Name="id_seance" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="fn_diagramobjects" ReturnType="int" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+</Schema>

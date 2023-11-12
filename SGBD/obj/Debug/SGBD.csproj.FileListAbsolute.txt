@@ -1,0 +1,13 @@
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\SGBD\bin\Debug\SGBD.exe.config
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\SGBD\bin\Debug\SGBD.exe
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\SGBD\bin\Debug\SGBD.pdb
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\SGBD\obj\Debug\SGBD.exe
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\SGBD\obj\Debug\SGBD.pdb
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\SGBD\obj\Debug\SGBD.csprojResolveAssemblyReference.cache
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\SGBD\bin\Debug\EntityFramework.dll
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\SGBD\bin\Debug\Interfaces.dll
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\SGBD\bin\Debug\Interfaces.pdb
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\SGBD\bin\Debug\EntityFramework.xml
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\SGBD\bin\Debug\fr\EntityFramework.resources.dll
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\SGBD\bin\Debug\Beans.dll
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\SGBD\bin\Debug\Beans.pdb

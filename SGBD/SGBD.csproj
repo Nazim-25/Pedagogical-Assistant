@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0BBB0121-8CCF-4424-9712-16C8B6DEAE9B}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SGBD</RootNamespace>
+    <AssemblyName>SGBD</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssistantDB2.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AssistantDB2.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AssistantDB2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AssistantDB2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AssistantDB2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AssistantDB2.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Enseignant.cs">
+      <DependentUpon>AssistantDB2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Etudiant.cs">
+      <DependentUpon>AssistantDB2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ImplServices.cs" />
+    <Compile Include="module2.cs">
+      <DependentUpon>AssistantDB2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleEtudie.cs">
+      <DependentUpon>AssistantDB2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RarFile.cs">
+      <DependentUpon>AssistantDB2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Seance2.cs">
+      <DependentUpon>AssistantDB2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SeanceAssiste.cs">
+      <DependentUpon>AssistantDB2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Services.cs" />
+    <Compile Include="sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>AssistantDB2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagrams_Result.cs">
+      <DependentUpon>AssistantDB2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StudentsManagementImpl.cs" />
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>AssistantDB2.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <EntityDeploy Include="AssistantDB2.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>AssistantDB2.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="AssistantDB2.edmx.diagram">
+      <DependentUpon>AssistantDB2.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Beans\Beans.csproj">
+      <Project>{7f2069c1-163b-427d-928b-4ee863b5d17f}</Project>
+      <Name>Beans</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Interfaces\Interfaces.csproj">
+      <Project>{4a8f0ac8-d96a-479f-acaa-f9a27da2149e}</Project>
+      <Name>Interfaces</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AssistantDB2.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AssistantDB2.edmx</DependentUpon>
+      <LastGenOutput>AssistantDB2.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="AssistantDB2.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AssistantDB2.edmx</DependentUpon>
+      <LastGenOutput>AssistantDB2.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

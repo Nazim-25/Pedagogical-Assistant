@@ -1,0 +1,18 @@
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\Etudiant\obj\Debug\Etudiant.csprojResolveAssemblyReference.cache
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\Etudiant\obj\Debug\Etudiant.EtudiantLogin.resources
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\Etudiant\obj\Debug\Etudiant.Properties.Resources.resources
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\Etudiant\obj\Debug\Etudiant.csproj.GenerateResource.Cache
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\Etudiant\bin\Debug\Etudiant.exe.config
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\Etudiant\bin\Debug\Etudiant.exe
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\Etudiant\bin\Debug\Etudiant.pdb
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\Etudiant\bin\Debug\Beans.dll
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\Etudiant\bin\Debug\Bunifu_UI_v1.52 (1).dll
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\Etudiant\bin\Debug\Interfaces.dll
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\Etudiant\bin\Debug\EntityFramework.dll
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\Etudiant\bin\Debug\Beans.pdb
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\Etudiant\bin\Debug\Interfaces.pdb
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\Etudiant\bin\Debug\EntityFramework.xml
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\Etudiant\bin\Debug\fr\EntityFramework.resources.dll
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\Etudiant\obj\Debug\Etudiant.exe
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\Etudiant\obj\Debug\Etudiant.pdb
+C:\Users\Nazim\onedrive\documents\visual studio 2012\Projects\miniProjet\Etudiant\obj\Debug\Etudiant.EtudiantMain.resources
