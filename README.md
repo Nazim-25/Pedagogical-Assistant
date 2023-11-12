@@ -69,6 +69,46 @@ The system comprises three remoting applications, each with its own specific set
     * This project contains the forms and functionality specific to the student role, such as submitting progress reports and communicating with the teacher.
 * **Application 3: Enseignant + Interfaces + Beans**
     * This project contains the forms and functionality specific to the teacher role, such as publishing practical work statements, reviewing attendance and progress reports, and communicating with students.
+ 
+## Database Schema
+<img src="/Images/Schema_DataBase.png" width="700">
+
+## Some Pictures
+
+<div style="position:relative;">
+  <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); text-align:center; color:white; font-weight:bold; font-size:20px;">enseignant Login form </div>
+  <img src="Images/Login_Enseignant.png" width="700">
+</div>
+
+<div style="position:relative;">
+  <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); text-align:center; color:white; font-weight:bold; font-size:20px;">Enseignant main form </div>
+  <img src="Images/Enseignant_Main.png" width="700">
+</div>
+
+<div style="position:relative;">
+  <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); text-align:center; color:white; font-weight:bold; font-size:20px;">Add student form</div>
+  <img src="/Images/AddStudentForm.png" width="700">
+</div>
+
+<div style="position:relative;">
+  <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); text-align:center; color:white; font-weight:bold; font-size:20px;">Assistant pedagogique main form</div>
+  <img src="Images/AssistantPedagogiqueMain.png" width="700">
+</div>
+
+<div style="position:relative;">
+  <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); text-align:center; color:white; font-weight:bold; font-size:20px;">Chose Path of a file  </div>
+  <img src="Images/Chose_Path.png" width="700">
+</div>
+
+<div style="position:relative;">
+  <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); text-align:center; color:white; font-weight:bold; font-size:20px;">Etudiant main form </div>
+  <img src="/Images/Etudiant_Main.png" width="700">
+</div>
+
+
+
+
+
 
 ## Contributing
 
@@ -87,4 +127,4 @@ This project is licensed under the MIT license.
 ## Contact
 
 If you have any questions or comments about the Pedagogical Assistant System, please feel free to contact me at [mahrougnazim@gmail.com].
-```
+
